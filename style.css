@@ -1,0 +1,162 @@
+/* style.css
+body
+{
+    background: url("soleil.png") fixed no-repeat top right, url("neige.png") fixed;
+} */
+
+
+body
+{
+    background-color: purple; /* Le fond de la page sera violet */
+    color: black; /* Le texte de la page sera noir */
+    background-image: url("nous_sommes_partis_maxres.gif");
+}
+
+
+*
+{
+    font-size: 1em ;
+    font-family: "Comic Sans MS", "Comic Sans", serif ;
+    /* background-color: rgba(255, 0, 0, 0.5); Fond rouge à moitié transparent */
+    	
+}
+
+h1, em
+{
+    color: green;
+}
+
+
+h1, h2, h3, figure
+{
+text-align: center; 
+}
+
+
+
+h1
+{
+    font-size: 2.5em ;
+    font-weight: bold;
+}
+
+h2
+{
+    text-decoration: underline ;
+    border: 3px green outset;
+    border-radius: 10px ;
+    box-shadow: 6px 6px 6px black;
+}
+
+p
+{
+    text-shadow: 2px 2px 4px black;
+}
+
+.introduction
+{
+    color: orange;
+}
+
+.salutations
+{
+    color: red;
+}
+
+h3 em
+{
+color: purple;
+}
+
+h3 + p
+{
+color: red;
+opacity: 0.2;
+}
+
+a[href]
+{
+color: cyan;
+}
+
+a[title = "Franchement elle est sympa"]
+{
+color: brown;
+}
+
+.imageflottante
+{
+    float: left;
+}
+
+.dessous
+{
+    clear: both;
+}
+
+mark
+{
+    /* La couleur de fond prend le pas sur celle de toute la page */
+    background-color: green;
+    color: white;
+}
+
+
+h2
+{
+    background-image: url("backg.jpg");
+    background-attachment: fixed; /* Le fond restera fixe */
+}
+
+a:hover
+{
+   	text-decoration: underline;
+  	color: yellow;
+  	font-size: 5em ;
+    font-weight: bold;
+}
+
+figure:active /* Quand le visiteur clique sur le l'image */
+{
+    background-color: #FFCC66;
+}
+
+/*adding rain img and making opacity 0*/
+            section:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url(
+https://media.geeksforgeeks.org/wp-content/uploads/20200828184719/rain-300x300.png);
+                animation: rain 0.4s linear infinite;
+                opacity: 0;
+            }
+            /* just changing the position of image 
+          of rain using keyframes*/
+            @keyframes rain {
+                0% {
+                    background-position: 0 0;
+                    opacity: 1;
+                }
+  
+                100% {
+                    background-position: 8% 80%;
+                    opacity: 1;
+                }
+            }
+            /* applying filter at different angle
+          on diffrent interval using keyframe*/
+            @keyframes color-change {
+                0% {
+                    filter: hue-rotate(0deg);
+                }
+                50% {
+                    filter: hue-rotate(0deg);
+                }
+                100% {
+                    filter: hue-rotate(360deg);
+                }
+            }
